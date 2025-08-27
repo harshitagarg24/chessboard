@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Chess Board with Pieces</title>
+    <style>
+        .chessboard {
+            display: grid;
+            grid-template-columns: repeat(8, 60px);
+            grid-template-rows: repeat(8, 60px);
+            border: 4px solid #333;
+            width: 480px;
+            height: 480px;
+            margin: 20px auto;
+        }
+
+        .square {
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .white {
+            background-color: #f0d9b5;
+        }
+
+        .black {
+            background-color: #b58863;
+        }
+
+        .square img {
+            width: 50px;
+            height: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="chessboard">
+        <!-- Row 1: Black major pieces -->
+        <div class="square white"><img src="https://image.shutterstock.com/shutterstock/photos/2170129511/display_1500/stock-vector-elephant-chess-glyph-icon-vector-elephant-chess-sign-isolated-symbol-illustration-2170129511.jpg" alt="Black Rook"></div>
+        <div class="square black"><img src="https://tse1.mm.bing.net/th/id/OIP.023Uq-ja8u0IAqOZNjR85QHaE8?pid=Api&P=0&h=180" alt="Black Knight"></div>
+        <div class="square white"><img src="https://tse4.mm.bing.net/th/id/OIP.v0HOUfsmBdiwOGZ2Cp4PUQHaFO?pid=Api&P=0&h=180" alt="Black Bishop"></div>
+        <div class="square black"><img src="https://tse2.mm.bing.net/th/id/OIP.nxAwxnLZ04o4s3sy__T-pgHaHa?pid=Api&P=0&h=180" alt="Black Queen"></div>
+        <div class="square white"><img src="https://tse2.mm.bing.net/th/id/OIP.cU6yWskkCDVwITgp4EbdrAHaHa?pid=Api&P=0&h=180" alt="Black King"></div>
+        <div class="square black"><img src="https://tse4.mm.bing.net/th/id/OIP.v0HOUfsmBdiwOGZ2Cp4PUQHaFO?pid=Api&P=0&h=180" alt="Black Bishop"></div>
+        <div class="square white"><img src="https://tse1.mm.bing.net/th/id/OIP.023Uq-ja8u0IAqOZNjR85QHaE8?pid=Api&P=0&h=180" alt="Black Knight"></div>
+        <div class="square black"><img src="https://image.shutterstock.com/shutterstock/photos/2170129511/display_1500/stock-vector-elephant-chess-glyph-icon-vector-elephant-chess-sign-isolated-symbol-illustration-2170129511.jpg" alt="Black Rook"></div>
+
+        <!-- Row 2: Black pawns -->
+        <div class="square black"><img src="https://tse2.mm.bing.net/th/id/OIP.GdXp6fuXm2V_RtLlgMBPrwHaHa?pid=Api&P=0&h=180" alt="Black Pawn"></div>
+        <div class="square white"><img src="https://tse2.mm.bing.net/th/id/OIP.GdXp6fuXm2V_RtLlgMBPrwHaHa?pid=Api&P=0&h=180" alt="Black Pawn"></div>
+        <div class="square black"><img src="https://tse2.mm.bing.net/th/id/OIP.GdXp6fuXm2V_RtLlgMBPrwHaHa?pid=Api&P=0&h=180" alt="Black Pawn"></div>
+        <div class="square white"><img src="https://tse2.mm.bing.net/th/id/OIP.GdXp6fuXm2V_RtLlgMBPrwHaHa?pid=Api&P=0&h=180" alt="Black Pawn"></div>
+        <div class="square black"><img src="https://tse2.mm.bing.net/th/id/OIP.GdXp6fuXm2V_RtLlgMBPrwHaHa?pid=Api&P=0&h=180" alt="Black Pawn"></div>
+        <div class="square white"><img src="https://tse2.mm.bing.net/th/id/OIP.GdXp6fuXm2V_RtLlgMBPrwHaHa?pid=Api&P=0&h=180" alt="Black Pawn"></div>
+        <div class="square black"><img src="https://tse2.mm.bing.net/th/id/OIP.GdXp6fuXm2V_RtLlgMBPrwHaHa?pid=Api&P=0&h=180" alt="Black Pawn"></div>
+        <div class="square white"><img src="https://tse2.mm.bing.net/th/id/OIP.GdXp6fuXm2V_RtLlgMBPrwHaHa?pid=Api&P=0&h=180" alt="Black Pawn"></div>
+
+        <!-- Rows 3–6: Empty squares -->
+        <div class="square white"></div>
+        <div class="square black"></div>
+        <div class="square white"></div>
+        <div class="square black"></div>
+        <div class="square white"></div>
+        <div class="square black"></div>
+        <div class="square white"></div>
+        <div class="square black"></div>
+
+        <div class="square black"></div>
+        <div class="square white"></div>
+        <div class="square black"></div>
+        <div class="square white"></div>
+        <div class="square black"></div>
+        <div class="square white"></div>
+        <div class="square black"></div>
+        <div class="square white"></div>
+
+        <div class="square white"></div>
+        <div class="square black"></div>
+        <div class="square white"></div>
+        <div class="square black"></div>
+        <div class="square white"></div>
+        <div class="square black"></div>
+        <div class="square white"></div>
+        <div class="square black"></div>
+        <!-- You can alternate colors manually or use JS to generate -->
+        <!-- Here's one empty row as example -->
+        <div class="square black"></div>
+        <div class="square white"></div>
+        <div class="square black"></div>
+        <div class="square white"></div>
+        <div class="square black"></div>
+        <div class="square white"></div>
+        <div class="square black"></div>
+        <div class="square white"></div>
+
+        <div class="square white"></div>
+        <div class="square black"></div>
+        <div class="square white"></div>
+        <div class="square black"></div>
+        <div class="square white"></div>
+        <div class="square black"></div>
+        <div class="square white"></div>
+        <div class="square black"></div>
+        <!-- Repeat for rows 4–6 -->
+
+        <!-- Row 7: White pawns -->
+        <div class="square black"><img src="https://tse3.mm.bing.net/th/id/OIP.8tev67UTX4UKmwfSXOrOgwAAAA?pid=Api&P=0&h=180" alt="White Pawn"></div>
+        <div class="square white"><img src="https://tse3.mm.bing.net/th/id/OIP.8tev67UTX4UKmwfSXOrOgwAAAA?pid=Api&P=0&h=180" alt="White Pawn"></div>
+        <div class="square black"><img src="https://tse3.mm.bing.net/th/id/OIP.8tev67UTX4UKmwfSXOrOgwAAAA?pid=Api&P=0&h=180" alt="White Pawn"></div>
+        <div class="square white"><img src="https://tse3.mm.bing.net/th/id/OIP.8tev67UTX4UKmwfSXOrOgwAAAA?pid=Api&P=0&h=180" alt="White Pawn"></div>
+        <div class="square black"><img src="https://tse3.mm.bing.net/th/id/OIP.8tev67UTX4UKmwfSXOrOgwAAAA?pid=Api&P=0&h=180" alt="White Pawn"></div>
+        <div class="square white"><img src="https://tse3.mm.bing.net/th/id/OIP.8tev67UTX4UKmwfSXOrOgwAAAA?pid=Api&P=0&h=180" alt="White Pawn"></div>
+        <div class="square black"><img src="https://tse3.mm.bing.net/th/id/OIP.8tev67UTX4UKmwfSXOrOgwAAAA?pid=Api&P=0&h=180" alt="White Pawn"></div>
+        <div class="square white"><img src="https://tse3.mm.bing.net/th/id/OIP.8tev67UTX4UKmwfSXOrOgwAAAA?pid=Api&P=0&h=180" alt="White Pawn"></div>
+
+        <!-- Row 8: White major pieces -->
+        <div class="square white"><img src="https://tse1.mm.bing.net/th/id/OIP.dCiyKxsYHTJ-RpsU66tA-wHaFO?pid=Api&P=0&h=180" alt="White Rook"></div>
+        <div class="square black"><img src="https://tse2.mm.bing.net/th/id/OIP.0gvtXV6jsbEoksTihQ8ZWAHaE7?pid=Api&P=0&h=180" alt="White Knight"></div>
+        <div class="square white"><img src="https://tse4.mm.bing.net/th/id/OIP.jkkemZ1mAkNr5XUIel82AQHaFj?pid=Api&P=0&h=180" alt="White Bishop"></div>
+        <div class="square black"><img src="https://tse2.mm.bing.net/th/id/OIP.pk_05TIl6Ik7x3HykBtUYgHaHa?pid=Api&P=0&h=180" alt="White Queen"></div>
+        <div class="square white"><img src="https://images.rawpixel.com/image_social_landscape/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTEyL3N0YXJ0dXBpbWFnZXNfcGhvdG9fb2Zfa2luZ19jaGVzc19waWVjZV9faXNvbGF0ZWRfb25fd2hpdGVfYmFja182ZmYwMzFkMC03NjRlLTRlZmMtYTJkMy00ZjRjNTRmZjM1YTNfMS5qcGc.jpg" alt="White King"></div>
+        <div class="square black"><img src="https://tse4.mm.bing.net/th/id/OIP.jkkemZ1mAkNr5XUIel82AQHaFj?pid=Api&P=0&h=180" alt="White Bishop"></div>
+        <div class="square white"><img src="https://tse2.mm.bing.net/th/id/OIP.0gvtXV6jsbEoksTihQ8ZWAHaE7?pid=Api&P=0&h=180" alt="White Knight"></div>
+        <div class="square black"><img src="https://tse1.mm.bing.net/th/id/OIP.dCiyKxsYHTJ-RpsU66tA-wHaFO?pid=Api&P=0&h=180" alt="White Rook"></div>
+    </div>
+</body>
+
+</html>
